@@ -41,7 +41,7 @@ export class TrackController {
     return this.trackService.delete(id);
   }
 
-  @Post("/comment")
+  @Post("/comments")
   addComment(@Body() dto: CreateCommentDto) {
     return this.trackService.addComment(dto);
   }
